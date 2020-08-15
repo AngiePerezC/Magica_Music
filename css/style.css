@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Montserrat:wght@400;500;700&family=Pacifico&display=swap" rel="stylesheet');
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+
+/*-----------------------------------------Estilos base-------------------------------------*/
+img{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+.container{
+    width: 100%;
+    margin: auto;
+}
+.container--flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.column{
+    width: 100%;
+}
+
+
+/*-----------------------------------------Estilos header-------------------------------------*/
+
+.main-header{
+    width: 100%;
+}
+.logoo{
+    font-size: 1.8em;
+    color: #3498DB;
+    padding: 10px;
+    font-family: 'Pacifico', cursive;
+    font-weight: 100;
+}
+.main-header__contactInfo__frase{
+    background: #3498DB;
+    color: #3498DB;
+    margin: 0 auto;
+    padding: 10px;
+}
+.main-header [class*="icon-"]:before{
+    position: relative; 
+    top: 2px;
+    right: 5px;
+}
+
+/*-----------------------------------------Estilos del Menú-------------------------------------*/
+
+.main-nav{
+    width: 100%;
+    position: relative;
+    z-index: 2000;
+    padding: 10px;
+}
+.icon-menu{
+    display: block;
+    color: white;
+    border: 1px solid white;
+    border-radius: 3px;
+    word-wrap: 40px;
+    height: 40px;
+    line-height: 42px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+.social-icon{
+    display:flex;
+    justify-content: space-between;
+}
+.social-icon [class*="icon-"] {
+    color: black;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    width: 35px;
+    height: 35px;
+    background: white;
+    border-radius: 100%;
+}
+.social-icon__link{
+    text-decoration: none;
+}
+.menu{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, .85);
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    height: 0;
+    overflow: hidden;
+    transition: height .3s linear;
+}
+.menu__link{
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+}
+.menu__link:hover{
+    background: #3498DB;
+}
+.menu__link--select{
+    background:#3498DB;
+}
+.mostrar{
+    height: 196px;
+}
+
+/*-----------------------------------------Estilos del Banner-------------------------------------*/
+
+
+.banner{
+    margin-top: -90px;
+    position: relative;
+}
+.banner:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index:1000;
+    top:0;
+}
+.banner__img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+.banner__content{
+    width: 90%;
+    color: white;
+    text-align: center;
+    position: absolute;
+    z-index: 1500;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-220%);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/*-----------------------------------------Estilos principales -------------------------------------*/
+
+
+.group--color .container {
+    background: #3498DB;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+.main__title {
+    margin: 15px 0;
+    font-size: 1.8em;
+    font-family: 'Pacific', cursive;
+    font-weight: 100;
+}
+
+.main__txt{
+    padding: 20px;
+}
+.column__title{
+    font-size: 1.3em;
+}
+
+
+.main__about__description .column:nth-child(2){
+    padding: 10px;
+}
+.btn {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    width: 120px;
+    background: #3498DB;
+    color:white;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.group__title{
+    font-family: 'Bungee Shade', cursive;
+    text-align: center;
+    font-weight: 100;
+    font-size: 1.8em;
+    margin: 30px;
+}
+
+
+.los-productos .column{
+    margin-bottom:  30px;
+    text-align: center;
+}
+.los-productos__img{
+    margin: auto;
+    max-width: 2010px;
+}
+.los-productos__title {
+    font-size: 1.3em;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.los-productos__price {
+    font-size: 1.2em;
+    color: #3498DB;
+    font-weight: bold;
+}
+.los-productos__img:hover {
+        transform: scale(1.2);
+    }
+
+/*-----------------------------------------Estilos del footer -------------------------------------*/
+
+.main-footer {
+    background: black;
+    color: white;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: .8em;
+}
+.copy {
+    text-align: center;
+    margin: auto;
+    margin-top: 15px;
+}
+.main-footer [class*="icon-"]{
+    color: white;
+    text-decoration: none;
+}
+
+
+.main-footer [class*="icon-"]:before{
+    position: relative;
+    top: 3px;
+    right: 5px;
+}
+
+/*-----------------------------------------Estilos responsive -------------------------------------*/
+
+@media screen and (min-width:480px){
+    .logo{
+        color: #3498DB;
+    }
+
+    .main-header__contactInfo{
+        text-align: right;
+    }
+    
+    .main-header__contactInfo__frase {
+        background: none;
+    }
+    .main-nav{
+        background: black;
+    }
+    .banner{
+        margin-top: -270px;
+        z-index: -1000;
+    }
+    .banner__img {
+        height: 600px;
+    }
+    .banner__content {
+        font-size: 3em;
+    }
+    .main {
+        padding-bottom: 15px;
+    }
+
+    .main__about__description .column:nth-child(2) {
+        padding-left: 20px;
+        font-size: .9em;
+    }
+    .btn {
+        margin: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .main__about__description .btn {
+        margin: auto;
+    }
+    .los-productos .column {
+        border: 5px solid #ddd;
+        padding: 5px;
+    }
+    .los-productos__img {
+        height: 200px;
+        object-fit: cover;
+    }
+    
+    .column--50 {
+        width: 50%;
+    }
+    .column--50-25 {
+        width: 49%;
+    }
+    .column--33 {
+        width: 32%;
+    }
+}
+@media screen and (min-width:768px) {
+    .main__title {
+        font-size: 2.2em;
+    }
+    .main__about__description {
+        margin-top: 40px;
+    }
+    .main__about__description .column--50:nth-child(2) {
+        font-size: 1em;
+    }
+    .main__about__description .column--50:nth-child(2) .column__txt {
+        line-height: 30px;
+    }
+
+    .main-footer .container--flex {
+        align-items: flex-start;
+    }
+
+    .column--50-25{
+        width: 24%;
+    }
+    .column__title {
+        font-size: 1.3em;
+    }
+    .group__title {
+        font-size: 2.2em;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .container {
+        width: 1000px;
+    }
+    .logo {
+        font-size: 2em;
+        padding: 0;
+    }
+    .main-header__contactInfo__frase{
+        padding-right: 0;
+        font-size: 1.5em;
+    }
+    .main-nav {
+        padding: 0;
+    }
+    .banner__img {
+        height: 800px;
+    }
+    .banner__content {
+        font-size: 2.5em;
+    }
+    .icon-menu {
+        display: none;
+    }
+    .menu {
+        position: static;
+        display: flex;
+        height: auto;
+        width: auto;
+    }
+    .menu__link {
+        padding: 20px;
+    }
+    .group--color .container {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 20px;
+    }
+    .main__title {
+        font-size: 3.0em;
+    }
+    .main__about__description .column--50:nth-child(2) .column__txt {
+        line-height: 45px;
+    }
+    .los-productos__title {
+        font-size: 1.4em;
+    }
+    .los-productos__price {
+        font-size: 1.8em;
+    }
+    .main-footer {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+
+@media screen and (min-width:1600px) {
+    .container {
+        width: 1400px;
+    }
+    .banner__img {
+        height: 750px;
+    }
+    .main__about__description .column:nth-child(1) img {
+        width: 100%;
+        height: 550px;
+        object-fit: cover;
+    }
+    .los-productos__img {
+        height: 300px;
+    }
+}
+
+
+
+
