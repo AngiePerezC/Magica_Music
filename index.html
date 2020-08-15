@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="Imagenes/rayo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magical Music</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Montserrat:wght@400;500;700&family=Pacifico&display=swap"
+    rel="stylesheet">
+    <link href="https://file.myfontastic.com/yCnudDfvNXdryk5DMScyQQ/icons.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container container--flex">
+        <div class="logo-container column column--50">
+         <h1 class="logoo">Magical Music</h1>
+        </div>
+    <div class="main-header__contactInfo 
+    column column--50">
+        <p class="main-header__contactInfo__frase">
+            #QuédateEnCasa
+            </p>
+        </div>
+    </div>
+    </header>
+
+
+    <nav class="main-nav">
+        <div class="container container--flex">
+            <span class="icon-menu" id="btnmenu"></span>
+            <ul class="menu" id="menu">
+                <li class="menu__item"><a href="index.html"
+                    class="menu__link menu__link--select">Inicio</a>
+                </li>
+                <li class="menu__item"><a href="nosotros.html"
+                    class="menu__link">Nosotros</a></li>
+                <li class="menu__item"><a href="producto.html"
+                    class="menu__link">Productos</a></li>
+                <li class="menu__item"><a href="Contactanos.html"
+                    class="menu__link">Contactanos</a></li>
+            </ul>  
+            <div class="social-icon">
+                <a href="https://www.facebook.com/musicmarket" class="social-icon__link"><span
+                    class="icon-facebook" ></span></a>
+                <a href="https://twitter.com/musicmarketnews" class="social-icon__link"><span
+                    class="icon-twitter"></span></a>
+                <a href="https://www.instagram.com/musicmarketperu/" class="social-icon__link"><span
+                    class="icon-instagrem"></span></a>
+                <a href="https://www.youtube.com/watch?v=sSY6GtAhp_0" class="social-icon__link"><span
+                    class="icon-youtube"></span></a>
+            </div>
+        </div>
+    </nav>
+
+<!-- Slider -->
+
+    <img name="slider" width="100%x" height="500px" >
+    <div class="banner__content">Bienvenido a Magical Music</div>
+    <script>
+        window.addEventListener('load', function() {
+            console.log('el contenido ha cargado!');
+
+            document.slider.src =  'Imagenes/banner.jpg';
+
+            var imagenes = [];
+            imagenes[0] = 'Imagenes/banner.jpg';
+            imagenes[1] = 'Imagenes/slider2.jpg';
+            imagenes[2] = 'Imagenes/slider3.jpg';
+            
+            var indiceImagenes = 0;
+            var tiempo = 3000;
+
+            function cambiarImagenes () {
+                document.slider.src = imagenes [indiceImagenes];
+
+                if(indiceImagenes <2 ) {
+                    indiceImagenes++;
+                }else{
+                        indiceImagenes = 0;
+                    }
+                }
+            setInterval(cambiarImagenes, tiempo);
+        });
+    </script>              
+
+
+<!------------------------ DESCRIPCIÓN ----------------------->
+
+<main class="main">
+    <section class="group group--color">
+        <div class="container">
+            <h2 class="main__title"></h2>
+            <p class="main__txt">Ofrecemos instrumentos tanto como Amplificadores, 
+                Accesorios, Guitarras Eléctricas y Acústicas, Teclados, Baterías, etc. Contamos con un excelente
+                servicio al cliente, seguro y eficaz. <br>
+                Somos Distribuidores  de la marca BEHRINGER en Perú, AKG, PEAVEY, Ernie Ball Music Man, Pearl,
+                Cort, Guitarras Falcón, Fender, Angel Lopez, Yamaha, ARTURIA, Orange, Korg, Turbosound, y muchas marcas más.
+                Eperamos que su visita sea de su agrado. <br>
+                Muchas Gracias.
+            </p>
+        </div>
+    </section>
+
+<!------------------------ ALGUNOS PRODUCTOS ----------------------->
+
+<section class="group los-productos">
+    <h2 class="group__title">Productos Exclusivos</h2>
+    <div class="container container--flex">
+        <div class="column column--50-25">
+            <img src="Imagenes/Instrumentos/Teclado-Yamaha-PSR-F51.jpg" alt="" class="los-productos__img">
+            <div class="los-produtos__title">Teclado-Yamaha-PSR-F51</div>
+            <div class="los-productos__price">$290.00</div>
+            <a href="Teclado.html" class="btn btn--contact">Ver más</a>
+        </div>
+        <div class="column column--50-25">
+            <img src="Imagenes/Instrumentos/Guitarra Squier Bullet Strat w-tremolo HSS - Black.jpg" alt="" class="los-productos__img">
+            <div class="los-produtos__title">Guitarra Squier Bullet Strat w-tremolo HSS - Black</div>
+            <div class="los-productos__price">$177.00</div>
+            <a href="Teclado.html" class="btn btn--contact">Ver más</a>
+        </div>
+        <div class="column column--50-25">
+            <img src="Imagenes/Instrumentos/Guitarra Squier Bullet Strat w-tremolo HSS - Sunburst.jpg" alt="" class="los-productos__img">
+            <div class="los-produtos__title">Guitarra Squier Bullet Strat w-tremolo HSS - Sunburst</div>
+            <div class="los-productos__price">$177.00</div>
+            <a href="index.html" class="btn btn--contact">Ver más</a>
+        </div>
+        <div class="column column--50-25">
+            <img src="Imagenes/Instrumentos/Piano Yamaha Disklavier DGB1KE3 PE.jpg" alt="" class="los-productos__img">
+            <div class="los-produtos__title">Piano Yamaha Disklavier DGB1KE3 PE</div>
+            <div class="los-productos__price">$1,419.65</div> 
+            <a href="index.html" class="btn btn--contact">Ver más</a>      
+        </div>
+        <div class="column column--50-25">
+                    <img src="Imagenes/Instrumentos/Accesorios/audifonos-american-audio-hp-550-lava-para-dj-american-audio-D_NQ_NP_724525-MPE32066028624_092019-F.jpg" alt="" class="los-productos__img">
+                    <div class="los-productos__title">AUDIFONOS PARA DJ HP 550 ROJO AMERICAN AUDIO</div>
+            <div class="los-productos__price">$55.00</div>
+                        <a href="index.html" class="btn btn--contact">Ver más</a>      
+        </div>
+           <div class="column column--50-25">
+                    <img src="Imagenes/Instrumentos/Guitarras/Sistema-shure-Blx288_pg58-36.png" alt="" class="los-productos__img">
+                    <div class="los-productos__title">Combo Guitarra Eléctrica Washburn WS300TS-A-U + Amplificador Marshall MG10</div>
+                    <div class="los-productos__price">$253.00</div>
+                        <a href="index.html" class="btn btn--contact">Ver más</a>
+                   
+                </div>
+                <div class="column column--50-25">
+                    <img src="Imagenes/Instrumentos/Amplificadores/AC4TV.jpg" alt="" class="los-productos__img">
+                    <div class="los-productos__title">AMPLIFICADOR DE GUITARRA AC4TV VOX</div>
+                    <div class="los-productos__price">$263.00</div>
+                        <a href="index.html" class="btn btn--contact">Ver más</a>
+                    
+                </div>
+                <div class="column column--50-25">
+                    <img src="Imagenes/Instrumentos/Amplificadores/BA152010-E.jpg" alt="" class="los-productos__img">
+                    <div class="los-productos__title">Amplificador BAJO BLACKSTAR Unity 250 ACTIVE BA152010-E</div>
+                    <div class="los-productos__price">$725.00</div>
+                        <a href="index.html" class="btn btn--contact">Ver más</a>              
+            </div>
+     </div>
+</section>
+
+<!------------------------ INFORMACIÓN SOBRE MUSICAL MAGIC ----------------------->
+
+</main>
+    <footer class="main-footer">
+        <div class="container container--flex">
+        <div class="column column--33">
+            <h2 class="column__title">Sobre Nuestro Equipo</h2>
+            <p class="column__txt">Estamos en crecimiento y realizamos servicios técnicos, asesorías y alquiler
+            de instrumentos y equipos de audio. Actualmente todos nuestros productos cuentan con Garantía.
+            Compra Online Amplificadores, Accesorios, Guitarras, Baterias y Teclados que más adelante irémos agregando más productos.
+            </p>
+        </div>
+        <div class="column column--33">
+            <h2 class="column__title">Contactanos</h2>
+        <p class="column__txt">Urb. Canto Grande 589 SJL, Lima, Perú</p>
+        <p class="column__txt">Teléfonos: 902-014-258</p>
+        <p class="column__txt">MusicalmagicOficial@gmail.com</p>
+        </div>
+        <div class="column column--33">
+            <h2 class="column__title">Síguenos en nuestras redes</h2>
+        <p class="column__txt"><a href="https://www.facebook.com/musicmarket" class="icon-facebook">Facebook</a></p>
+        <p class="column__txt"><a href="https://twitter.com/musicmarketnews" class="icon-twitter">Síguenos en Twitter</a></p>
+        <p class="column__txt"><a href="https://www.instagram.com/musicmarketperu/" class="icon-instagrem">Síguenos en Instagram</a></p>
+        <p class="column__txt"><a href="https://www.youtube.com/watch?v=sSY6GtAhp_0" class="icon-youtube">Visita nuestro canal</a>
+        </p>
+        </div>
+        <p class="copy">Copyright © 2020 Musical Magic | Hecho por Angie Perez</p>
+            <script src="js/menu.js"></script>
+        </div>
+    </footer>
+
+</body>
+</html>
